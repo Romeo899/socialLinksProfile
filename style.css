@@ -1,0 +1,114 @@
+ /* #### Mobile first design ### (375px & below) */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');   
+    
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    }
+    /* resuable styles and components */
+    
+    :root {
+        
+        /* colours */
+        --grey-900: rgb(20, 20, 20);
+        --grey-800: rgb(31, 31, 31);
+        --grey-700: rgb(51, 51, 51);
+        --green : rgb(196, 248, 42);
+        --white : rgb(255, 255, 255);
+        
+        /* typography */
+        
+        --text-preset-1: 700 24px/1.5 'Inter', sans-serif;
+        --text-preset-2: 400 14px/1.5 'Inter', sans-serif;
+        --text-preset-2-bold: 700 14px/1.5 'Inter', sans-serif;
+        --zero-letter-spacing: 0;
+        
+        /* spacing */
+        
+        --spacing-500: 40px;
+        --spacing-300: 24px;
+        --spacing-200: 16px;
+        --spacing-150: 12px;
+        --spacing-100: 8px;
+        --spacing-50: 4px;
+    }
+    
+    /* reusuable class variables */
+    
+    .text-preset-1 {
+        font: var(--text-preset-1);
+        letter-spacing: var(--zero-letter-spacing);
+    }
+    
+    .text-preset-2 {
+        font: var(--text-preset-2);
+        letter-spacing: var(--zero-letter-spacing);
+    }
+    
+    .text-preset-2-bold {
+        font: var(--text-preset-2-bold);
+        letter-spacing: var(--zero-letter-spacing);
+    }
+
+    .default-border-radius {
+        border-radius: var(--spacing-150);
+    }
+
+    .spacing-300 {
+        padding: var(--spacing-300) 0;
+    }
+    
+/* Attribution Styles */
+.attribution { 
+        display: none;
+        font-size: 11px; text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* #### Mobile first design ### (375px & below) */
+
+body {
+    min-height: 100vh;
+    background-color: var(--grey-900);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 327px;
+    height: 579px;
+    background-color: var(--grey-800);
+    border-radius: var(--spacing-150); 
+    
+    margin: var(--spacing-300);
+    padding: var(--spacing-300);
+}
+
+/* main inner content */
+
+/* image */
+
+.image {
+
+    border-radius: 50%;
+    height: 88px;
+    width: 88px;
+}
+
+.name {
+    color: var(--white);
+
+}
