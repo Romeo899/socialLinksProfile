@@ -182,4 +182,11 @@ li {
     color: var(--grey-800);
 }
 
+/* Tablet */
+@media (min-width: 768px) {
 
+    main {
+        min-width: 384px;
+        min-height: 611px;
+    }
+}
