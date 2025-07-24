@@ -70,12 +70,7 @@ html, body {
         margin-bottom: var(--spacing-200);
     }
     
-/* Attribution Styles */
-.attribution { 
-        display: none;
-        font-size: 11px; text-align: center; 
-}
-.attribution a { color: hsl(228, 45%, 44%); }
+
 
 
 /* #### Mobile first design ### (375px & below) */
@@ -189,4 +184,24 @@ li {
         min-width: 384px;
         min-height: 611px;
     }
+
+    /* Attribution Styles */
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    color: var(--white)
+
+}
+.attribution a { 
+    font: var(--text-preset-2-bold);
+    color: var(--white)
+} 
+
+.attribution a:hover {
+    color: var(--green);
+}
 }
